@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Cookie and LocalStorage Extractor",
+    "version": "1.0",
+    "description": "Extracts cookies and local storage data",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "cookies",
+      "activeTab",
+      "storage",
+      "downloads",
+      "scripting",
+      "https://www.ebay.com/",
+      "https://stags.bluekai.com/",
+      "https://signin.ebay.com/",
+      "https://c.paypal.com/",
+      "https://accounts.ebay.com/",
+      "https://www.google.com/"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+  }
+  
